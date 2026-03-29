@@ -93,17 +93,22 @@ margin-top:0;
 color:#1f2933;
 }
 
+img{
+width:100%;
+border-radius:8px;
+transition: transform 0.3s ease;
+}
+
+img:hover{
+transform: scale(1.05);
+}
+
 footer{
 background:#1f2933;
 color:white;
 text-align:center;
 padding:20px;
 margin-top:40px;
-}
-
-img{
-max-width:100%;
-border-radius:8px;
 }
 
 @media(max-width:800px){
@@ -138,7 +143,6 @@ grid-template-columns:1fr;
 <div class="links">
 
 <a href="https://www.linkedin.com/in/tharunkumar-ravi-636669370" target="_blank">LinkedIn</a>
-
 <a href="https://github.com/tharun-2205" target="_blank">GitHub</a>
 
 </div>
@@ -157,27 +161,15 @@ grid-template-columns:1fr;
 <div class="about-grid">
 
 <div class="card">
-
 <p>
-I am <b>Tharunkumar R</b>, currently pursuing M.Tech in Embedded Systems at Amrita Vishwa Vidyapeetham. With a background in Electronics and Communication Engineering, I am passionate about designing embedded systems that combine hardware and software to solve real-world engineering problems.
+I am <b>Tharunkumar R</b>, currently pursuing M.Tech in Embedded Systems at Amrita Vishwa Vidyapeetham. I specialize in building embedded systems combining hardware and software for real-world applications.
 </p>
-
-<p>
-My work focuses on building reliable microcontroller-based systems involving sensing, signal processing, and intelligent control. I enjoy working with platforms such as <b>STM32, ESP32, Arduino, and Raspberry Pi</b> to create practical embedded solutions.
-</p>
-
 </div>
 
 <div class="card">
-
 <p>
-As a person, I consider myself an <b>optimistic learner</b> who enjoys exploring new technologies and improving technical skills continuously. I value collaboration and communication, making me a <b>good listener and team player</b>.
+I enjoy working with STM32, ESP32, Arduino, and Raspberry Pi. My focus areas include sensing systems, automation, and intelligent embedded solutions.
 </p>
-
-<p>
-I am comfortable taking initiative when needed and enjoy contributing to projects that require teamwork, leadership, and problem solving. My goal is to develop innovative embedded systems that address real-world challenges in automation, sensing systems, and intelligent devices.
-</p>
-
 </div>
 
 </div>
@@ -193,38 +185,29 @@ I am comfortable taking initiative when needed and enjoy contributing to project
 <div class="card">
 
 <h4>Programming</h4>
-
 <div class="skills">
-
 <span class="skill">C</span>
 <span class="skill">Embedded C</span>
-
 </div>
 
 <br>
 
 <h4>Microcontrollers</h4>
-
 <div class="skills">
-
 <span class="skill">STM32</span>
 <span class="skill">ESP32</span>
 <span class="skill">Arduino</span>
 <span class="skill">Raspberry Pi</span>
-
 </div>
 
 <br>
 
 <h4>Tools</h4>
-
 <div class="skills">
-
 <span class="skill">STM32CubeIDE</span>
 <span class="skill">Arduino IDE</span>
 <span class="skill">LabVIEW</span>
 <span class="skill">Proteus</span>
-
 </div>
 
 </div>
@@ -241,59 +224,50 @@ I am comfortable taking initiative when needed and enjoy contributing to project
 
 
 <div class="card project">
-
 <h3>Vehicle Collision Avoidance System</h3>
-
 <p>
-Designed an embedded collision avoidance system using STM32 with ultrasonic and IR sensors. Implemented sensor fusion and filtering techniques to provide stable obstacle detection and real-time safety alerts.
+Designed an embedded collision avoidance system using STM32 with ultrasonic and IR sensors.
 </p>
-
 </div>
 
 
 <div class="card project">
-
 <h3>Music Genre Classification</h3>
-
 <p>
-Developed a machine learning model capable of classifying music genres using MFCC feature extraction and neural network based learning techniques for automated audio analysis.
+Developed a machine learning model using MFCC and neural networks.
 </p>
-
 </div>
 
 
 <div class="card project">
-
 <h3>ICU Tele-Monitoring Device</h3>
-
 <p>
-Built a healthcare monitoring system that enables continuous observation of ICU patients by doctors, nurses, and patient attendants to ensure timely medical supervision.
+Built a healthcare monitoring system for real-time patient observation.
 </p>
-
 </div>
 
 
-<!-- ✅ UPDATED PROJECT WITH IMAGES -->
+<!-- ✅ YOUR UPDATED PROJECT -->
 
 <div class="card project">
 
 <h3>Underwater Orthomosaicking Reconstruction</h3>
 
 <p>
-Created a digital reconstruction method that stitches underwater images to generate orthomosaic maps of submerged environments. The system performs feature matching, homography alignment, and image blending while handling underwater lighting distortions.
+Developed an image stitching system to generate orthomosaic views of underwater environments using feature matching, homography estimation, and image blending techniques.
 </p>
 
-<div style="margin-top:15px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:15px;">
 
-<img src="images/pattern_match.png" alt="Pattern Matching">
-<img src="images/underwater_stitched.png" alt="Final Output">
+<img src="images/pattern_match.png" alt="Feature Matching Output">
+<img src="images/underwater_stitched.png" alt="Final Orthomosaic Output">
 
 </div>
 
 <ul style="margin-top:10px;">
-<li>Feature detection using ORB/SIFT</li>
-<li>Homography-based image stitching</li>
-<li>Illumination correction for underwater scenes</li>
+<li>ORB/SIFT-based feature detection</li>
+<li>Homography transformation for alignment</li>
+<li>Seamless blending for underwater correction</li>
 </ul>
 
 </div>
@@ -310,28 +284,21 @@ Created a digital reconstruction method that stitches underwater images to gener
 <h2>Certifications</h2>
 
 <div class="card">
-
 <ul>
-
 <li>Ethical Hacking Certification – Parts2Product</li>
-<li>LabVIEW Certification Course – National Instruments</li>
-<li>Certified LabVIEW Associate Developer (CLAD)</li>
-
+<li>LabVIEW Certification – National Instruments</li>
+<li>CLAD Certified</li>
 </ul>
-
 </div>
 
 </div>
-
 
 
 </div>
 
 
 <footer>
-
-© 2026 Tharunkumar R | Embedded Systems Portfolio
-
+© 2026 Tharunkumar R | Portfolio
 </footer>
 
 
