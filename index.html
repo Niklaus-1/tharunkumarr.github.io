@@ -22,6 +22,21 @@ color:white;
 padding:60px 10%;
 }
 
+.header-container{
+display:flex;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.profile-img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #ff9f43;
+}
+
 header h1{
 margin:0;
 font-size:40px;
@@ -88,14 +103,10 @@ grid-template-columns:1fr 1fr;
 gap:25px;
 }
 
-.project h3{
-margin-top:0;
-color:#1f2933;
-}
-
 img{
 width:100%;
 border-radius:8px;
+margin-top:10px;
 transition: transform 0.3s ease;
 }
 
@@ -112,15 +123,12 @@ margin-top:40px;
 }
 
 @media(max-width:800px){
-
 .about-grid{
 grid-template-columns:1fr;
 }
-
 .project-grid{
 grid-template-columns:1fr;
 }
-
 }
 
 </style>
@@ -132,6 +140,12 @@ grid-template-columns:1fr;
 
 <header>
 
+<div class="header-container">
+
+<!-- ✅ FIXED HERE -->
+<img src="images/profile.jpeg" class="profile-img" alt="Profile">
+
+<div>
 <h1>Tharunkumar R</h1>
 
 <p>M.Tech Embedded Systems | Electronics & Communication Engineer</p>
@@ -141,9 +155,11 @@ grid-template-columns:1fr;
 </p>
 
 <div class="links">
-
 <a href="https://www.linkedin.com/in/tharunkumar-ravi-636669370" target="_blank">LinkedIn</a>
 <a href="https://github.com/tharun-2205" target="_blank">GitHub</a>
+</div>
+
+</div>
 
 </div>
 
@@ -162,13 +178,13 @@ grid-template-columns:1fr;
 
 <div class="card">
 <p>
-I am <b>Tharunkumar R</b>, currently pursuing M.Tech in Embedded Systems at Amrita Vishwa Vidyapeetham. I specialize in building embedded systems combining hardware and software for real-world applications.
+I am <b>Tharunkumar R</b>, currently pursuing M.Tech in Embedded Systems at Amrita Vishwa Vidyapeetham.
 </p>
 </div>
 
 <div class="card">
 <p>
-I enjoy working with STM32, ESP32, Arduino, and Raspberry Pi. My focus areas include sensing systems, automation, and intelligent embedded solutions.
+I work with STM32, ESP32, Arduino, and Raspberry Pi focusing on embedded system design.
 </p>
 </div>
 
@@ -225,51 +241,29 @@ I enjoy working with STM32, ESP32, Arduino, and Raspberry Pi. My focus areas inc
 
 <div class="card project">
 <h3>Vehicle Collision Avoidance System</h3>
-<p>
-Designed an embedded collision avoidance system using STM32 with ultrasonic and IR sensors.
-</p>
+<p>Embedded system using ultrasonic + IR sensors.</p>
+<img src="images/collision_system.png">
 </div>
 
 
 <div class="card project">
 <h3>Music Genre Classification</h3>
-<p>
-Developed a machine learning model using MFCC and neural networks.
-</p>
+<p>ML model using MFCC.</p>
 </div>
 
 
 <div class="card project">
 <h3>ICU Tele-Monitoring Device</h3>
-<p>
-Built a healthcare monitoring system for real-time patient observation.
-</p>
+<p>Healthcare monitoring system.</p>
 </div>
 
-
-<!-- ✅ YOUR UPDATED PROJECT -->
 
 <div class="card project">
-
 <h3>Underwater Orthomosaicking Reconstruction</h3>
-
-<p>
-Developed an image stitching system to generate orthomosaic views of underwater environments using feature matching, homography estimation, and image blending techniques.
-</p>
-
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:15px;">
-
-<img src="images/pattern_match.png" alt="Feature Matching Output">
-<img src="images/underwater_stitched.png" alt="Final Orthomosaic Output">
-
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+<img src="images/pattern_match.png">
+<img src="images/underwater_stitched.png">
 </div>
-
-<ul style="margin-top:10px;">
-<li>ORB/SIFT-based feature detection</li>
-<li>Homography transformation for alignment</li>
-<li>Seamless blending for underwater correction</li>
-</ul>
-
 </div>
 
 
@@ -285,8 +279,8 @@ Developed an image stitching system to generate orthomosaic views of underwater 
 
 <div class="card">
 <ul>
-<li>Ethical Hacking Certification – Parts2Product</li>
-<li>LabVIEW Certification – National Instruments</li>
+<li>Ethical Hacking Certification</li>
+<li>LabVIEW Certification</li>
 <li>CLAD Certified</li>
 </ul>
 </div>
@@ -298,7 +292,7 @@ Developed an image stitching system to generate orthomosaic views of underwater 
 
 
 <footer>
-© 2026 Tharunkumar R | Portfolio
+© 2026 Tharunkumar R
 </footer>
 
 
