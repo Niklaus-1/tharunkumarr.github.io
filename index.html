@@ -101,6 +101,11 @@ padding:20px;
 margin-top:40px;
 }
 
+img{
+max-width:100%;
+border-radius:8px;
+}
+
 @media(max-width:800px){
 
 .about-grid{
@@ -268,13 +273,28 @@ Built a healthcare monitoring system that enables continuous observation of ICU 
 </div>
 
 
+<!-- ✅ UPDATED PROJECT WITH IMAGES -->
+
 <div class="card project">
 
 <h3>Underwater Orthomosaicking Reconstruction</h3>
 
 <p>
-Created a digital reconstruction method that stitches underwater images to generate orthomosaic maps of submerged archaeological sites while correcting distortion and lighting variations.
+Created a digital reconstruction method that stitches underwater images to generate orthomosaic maps of submerged environments. The system performs feature matching, homography alignment, and image blending while handling underwater lighting distortions.
 </p>
+
+<div style="margin-top:15px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+
+<img src="images/pattern_match.png" alt="Pattern Matching">
+<img src="images/underwater_stitched.png" alt="Final Output">
+
+</div>
+
+<ul style="margin-top:10px;">
+<li>Feature detection using ORB/SIFT</li>
+<li>Homography-based image stitching</li>
+<li>Illumination correction for underwater scenes</li>
+</ul>
 
 </div>
 
